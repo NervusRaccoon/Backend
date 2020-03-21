@@ -16,10 +16,10 @@ b) http://localhost/lw1/nginx_is_fast_http_server.txt
 200 OK - Код описывает специальное поведение веб сервера. Запрос выполнен успешно. 
 
 c) http://localhost/lw1/php_is_a_server_scripting_language.php
-302 Found - Код описывает специальное поведение веб-сервера. Означает ресурс был временно перемещен.
+302 Found - Код описывает специальное поведение веб-сервера. Запрошенный ресурс был временно перемещен по адресу, указанному в заголовке Location. В отличие от ошибки 301, 302 Found – это лишь временное перенаправление на другой адрес, которое подразумевает возврат к старому варианту в неопределенном будущем. 
 
 d) http://localhost/lw1/javascript_is_a_client_side_language.php?how_to_work=hardly
-HTTP 400 Bad Request - Код ошибки. Сервер не смог понять запрос из-за недействительного синтаксиса. - Нужно исправить ссылку на http://localhost/lw1/javascript_is_a_client_side_language.php?how_to_work=hard
+HTTP 400 Bad Request - Код ошибки. Плохой запрос от клиента. - Нужно исправить ссылку на http://localhost/lw1/javascript_is_a_client_side_language.php?how_to_work=hard
 
 3. charset у заголовка Content-Type используется для кодировки
 При его отсутсвии используется набора символов ISO 8859-1. Если браузер неправильно угадает кодировку, то вместо текста будут отображаться иероглифы.
