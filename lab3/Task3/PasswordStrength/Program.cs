@@ -46,23 +46,23 @@ namespace PasswordStrength
         public static int CheckCopies(string str)
         {
             int copies = 0;
-            Dictionary<char, int> storage = new Dictionary<char, int>();
+            Dictionary<char, int> charDictionary = new Dictionary<char, int>();
             foreach (char ch in str)
             {
-                if (storage.ContainsKey(ch))
+                if (charDictionary.ContainsKey(ch))
                 {
-                    storage[ch]++;
+                    charDictionary[ch]++;
                 }
                 else
                 {
-                    storage.Add(ch, 1);
+                    charDictionary.Add(ch, 1);
                 }
             }
             foreach (var i in storage)
             {
                 if (i.Value > 1)
                 {
-                    copies += i.Value;
+                    charDictionary += i.Value;
                 }
             }
             return copies;
@@ -130,7 +130,7 @@ namespace PasswordStrength
             int strength = CalculateStrength(password, digits, lowercase, uppercase);
             return strength;
         }
-        public static void main(string[] args)
+        public static void Main(string[] args)
         {
             try
             {
