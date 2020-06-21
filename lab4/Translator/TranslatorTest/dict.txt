@@ -1,0 +1,5 @@
+﻿dictionary=словарь
+keyboard=клавиатура
+road=дорога
+computer=компьютер
+
