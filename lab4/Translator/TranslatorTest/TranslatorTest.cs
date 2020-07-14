@@ -14,7 +14,7 @@ namespace TranslatorTests
         [Fact]
         public void SuccessFindFromRuToEn()
         {
-            Assert.Equal("дорога", dictionary.Find("road"));
+            Assert.Equal("РґРѕСЂРѕРіР°", dictionary.Find("road"));
         }
         [Fact]
         public void FindNull()
@@ -24,7 +24,7 @@ namespace TranslatorTests
         [Fact]
         public void SuccessFindFromEnToRu()
         {
-            Assert.Equal("computer", dictionary.Find("компьютер"));
+            Assert.Equal("computer", dictionary.Find("РєРѕРјРїСЊСЋС‚РµСЂ"));
         }
     }
 }
