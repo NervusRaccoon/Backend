@@ -35,7 +35,7 @@ namespace MyNotesTests
         public void TestAddToEmptyStorage()
         {
             resetStorage();
-            string text = "Note1, здесь содержится текст";
+            string text = "Note1, Р·РґРµСЃСЊ СЃРѕРґРµСЂР¶РёС‚СЃСЏ С‚РµРєСЃС‚";
             notesRepository.Add(new Note() { content = text });
             List<Note> notes = (List<Note>)notesRepository.GetAll();
             Assert.Single(notes);
